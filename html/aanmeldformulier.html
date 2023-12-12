@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+  <title>Kerkkamp Middelbare school Aanmeldformulier</title>
+
+  <!--metatags for responsiveness-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta charset="utf-8">
+  <style>
+    /* Code applied to all standard HTML element tags */
+    * {
+      text-decoration: none;
+      font-family: 'Cursive', sans-serif;
+    }
+
+    html,
+    body {
+      background-color: #2e3f4f;
+      /* Dark blue background */
+      text-align: center;
+      min-height: -webkit-fill-available;
+      color: #fff;
+      /* White text */
+    }
+
+    span {
+      font-size: large;
+      color: #ff6363;
+      /* Red text */
+    }
+
+    form {
+      margin: 10% auto;
+    }
+
+    label {
+      font-size: large;
+      color: #ffcc00;
+      /* Yellow text */
+    }
+
+    #transportation, input {
+      padding: 1%;
+      border-radius: 3px;
+      border: none;
+    }
+
+    /* Code applied to all HTML elements with an ID */
+
+    #nChild {
+      min-width: 20rem;
+      background-color: #c0ffee;
+      /* Light green background */
+      border-radius: 3px;
+    }
+
+    ::placeholder {
+      text-align: center;
+      color: #8b0000;
+      font-size: medium;
+      margin: auto;
+    }
+
+    #submitButton {
+      padding: 10px 20px;
+      background-color: #e44d26;
+      /* Christmas red button */
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: inherit;
+      margin-top: 10%;
+    }
+
+    #submitButton:hover {
+      background-color: #bf4021;
+      /* Darker red on hover */
+      color: #fff;
+    }
+
+    #submitButton:active {
+      background-color: #992b1a;
+      /* Even darker red on click */
+      color: #fff;
+    }
+
+    #group {
+      min-width: 15rem;
+      background-color: #c0ffee;
+      /* Light green background */
+      border-radius: 3px;
+    }
+
+    #transportation {
+      background-color: #c0ffee;
+      max-width: fit-content;
+      padding: 1%;
+      margin: auto;
+      color: #8b0000;
+    }
+
+    .col-25 {
+      margin-bottom: 5px;
+    }
+
+    #iBAN {
+      min-width: 24rem;;
+      background-color: #c0ffee;
+      /* Light green background */
+      border-radius: 3px;
+      padding: 1%;
+    }
+
+    #iBAN::placeholder {
+      font-size: 15px;
+    } 
+
+    .row {
+      margin-top: 3%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- https://formsubmit.co/ginaarmanyous032@gmail.com -->
+  <form id="form" action="https://formsubmit.co/bavli2002@hotmail.com" method="POST" target="_self">
+    <div class="row">
+      <div class="col-25">
+        <label for="group">Groep:</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="group" name="Klas" placeholder="Vul hier je groep in" min="6" max="8"
+          required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="VoorEnAchternaam">Voor- en Achternaam:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nChild" name="VoorEnAchternaam" placeholder="Vul hier je voor- en achternaam in"
+          required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Vervoer">Heb je vervoer?</label>
+      </div>
+      <div class="col-75" id="transportation">
+        <input type="radio" id="ja" name="Vervoer" value="ja" required>
+        <label for="ja">Ja</label>
+        <input type="radio" id="nee" name="Vervoer" value="nee" required>
+        <label for="nee">Nee</label>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="iBAN">IBAN:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="iBAN" name="iBAN" placeholder="Vul hier het bankrekeningnummer in waarmee je betaalt"
+            required>
+        </div>
+      </div>
+      <button id="submitButton" type="submit">Verzend gegevens</button>
+  </form>
+</body>
+
+</html>
